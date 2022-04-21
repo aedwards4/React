@@ -208,6 +208,12 @@ export default function Home() {
               title={`Monthly Closed Issues for ${repository.value} in last 1 year`}
               data={githubRepoData?.closed}
             />
+            {/* Render stackedBar component for a monthly created&closed issues for a selected repositories*/}
+            <StackedBar
+              title={`Monthly Created & Closed Issues for ${repository.value} in last 1 year`}
+              createdData={githubRepoData?.created}
+              closedData={githubRepoData?.closed}
+            />
             <Divider
               sx={{ borderBlockWidth: "3px", borderBlockColor: "#FFA500" }}
             />
