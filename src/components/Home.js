@@ -273,7 +273,7 @@ export default function Home() {
               dataType={'Stars'}
             />
             {/* Render barchart component for forks for a selected repositories*/}
-            <BarCharts
+            <SpecialBar
               title={`Forks for ${repository.value} in last 1 year`}
               data={githubRepoData?.forkCount}
               dataType={'Forks'}
