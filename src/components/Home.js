@@ -267,14 +267,16 @@ export default function Home() {
               closedData={githubRepoData?.closed}
             />
             {/* Render barchart component for stars for a selected repositories*/}
-            <BarCharts
+            <SpecialBar
               title={`Stars for ${repository.value} in last 1 year`}
               data={githubRepoData?.starCount}
+              dataType={'Stars'}
             />
             {/* Render barchart component for forks for a selected repositories*/}
             <BarCharts
               title={`Forks for ${repository.value} in last 1 year`}
               data={githubRepoData?.forkCount}
+              dataType={'Forks'}
             />
             <Divider
               sx={{ borderBlockWidth: "3px", borderBlockColor: "#FFA500" }}
