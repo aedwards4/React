@@ -22,6 +22,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 // Import custom components
 import BarCharts from "./BarCharts";
+import LineCharts from "./LineCharts";
 import StackedBar from "./StackedBar";
 import Loader from "./Loader";
 import { ListItemButton } from "@mui/material";
@@ -159,6 +160,8 @@ export default function Home() {
       body: JSON.stringify({ repository: repository.key }),
     };
 
+
+
     /*
     Fetching the GitHub details from flask microservice
     The route "/api/github" is served by Flask/App.py in the line 53
@@ -257,14 +260,20 @@ export default function Home() {
               createdData={githubRepoData?.created}
               closedData={githubRepoData?.closed}
             />
-            {/* Render barchart component for a monthly stars for a selected repositories*/}
+            {/* Render lineCharts component for a monthly created&closed issues for a selected repositories*/}
+            <LineCharts
+              title={`Monthly Created & Closed Issues for ${repository.value} in last 1 year`}
+              createdData={githubRepoData?.created}
+              closedData={githubRepoData?.closed}
+            />
+            {/* Render barchart component for stars for a selected repositories*/}
             <BarCharts
-              title={`Monthly Stars for ${repository.value} in last 1 year`}
+              title={`Stars for ${repository.value} in last 1 year`}
               data={githubRepoData?.starCount}
             />
-            {/* Render barchart component for a monthly forks for a selected repositories*/}
+            {/* Render barchart component for forks for a selected repositories*/}
             <BarCharts
-              title={`Monthly Forks for ${repository.value} in last 1 year`}
+              title={`Forks for ${repository.value} in last 1 year`}
               data={githubRepoData?.forkCount}
             />
             <Divider
