@@ -5,7 +5,7 @@ const ReactHighcharts = require("react-highcharts");
 const StackedBar = (props) => {
   const config = {
     chart: {
-      type: "bar",
+      type: "column",
     },
     title: {
       text: props.title,
