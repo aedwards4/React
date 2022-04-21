@@ -116,6 +116,7 @@ export default function Home() {
       // Append the repository key to request body
       body: JSON.stringify({ repository: repository.key }),
     };
+    console.log(repositories);
 
     /*
     Fetching the GitHub details from flask microservice

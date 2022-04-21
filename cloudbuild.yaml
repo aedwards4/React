@@ -20,21 +20,7 @@ steps:
         "--platform",
         "managed",
         "--port",
-        "80",
+        "3000",
       ]
-  # [START cloudbuild_npm_node]
-  # Install dependencies
-  - name: node
-    entrypoint: npm
-    args: ["install"]
-  # Run tests
-  - name: node
-    entrypoint: npm
-    args: ["test"]
-  # Run custom commands
-  - name: node
-    entrypoint: npm
-    args: ["run", "build"]
-# [END cloudbuild_npm_node]
 images:
   - gcr.io/react-347722/react
