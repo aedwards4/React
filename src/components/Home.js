@@ -44,6 +44,27 @@ const repositories = [
     key: "d3/d3",
     value: "D3",
   },
+  // +++++++++++ Added +++++++++++
+  {
+    key: "SebastianM/angular-google-maps",
+    value: "Angular-Google-Maps",
+  },
+  {
+    key: "facebook/react",
+    value: "Facebook-React",
+  },
+  {
+    key: "tensorflow/tensorflow",
+    value: "Tensorflow",
+  },
+  {
+    key: "keras-team/keras",
+    value: "Keras",
+  },
+  {
+    key: "pallets/flask",
+    value: "Pallets-Flask",
+  },
 ];
 
 export default function Home() {
@@ -134,7 +155,7 @@ export default function Home() {
       >
         <Toolbar>
           <Typography variant="h6" noWrap component="div">
-            Timeseries Forecasting!!!
+            Timeseries Forecasting
           </Typography>
         </Toolbar>
       </AppBar>
