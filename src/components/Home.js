@@ -24,6 +24,7 @@ import ListItemText from "@mui/material/ListItemText";
 import BarCharts from "./BarCharts";
 import LineCharts from "./LineCharts";
 import StackedBar from "./StackedBar";
+import SpecialBar from "./SpecialBar";
 import Loader from "./Loader";
 import { ListItemButton } from "@mui/material";
 
