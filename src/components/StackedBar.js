@@ -26,6 +26,11 @@ const StackedBar = (props) => {
         text: "Issues",
       },
     },
+    plotOptions: {
+        series: {
+            stacking: 'normal'
+        }
+    },
     legend: {
       enabled: false,
     },

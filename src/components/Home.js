@@ -101,6 +101,9 @@ export default function Home() {
     setRepository(repo);
   };
 
+
+  console.log(githubRepoData);
+
   /* 
   Fetch the data from flask microservice on Component load and on update of new repository.
   Everytime there is a change in a repository, useEffect will get triggered, useEffect inturn will trigger 
