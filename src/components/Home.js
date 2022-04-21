@@ -22,6 +22,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 // Import custom components
 import BarCharts from "./BarCharts";
+import StackedBar from "./StackedBar";
 import Loader from "./Loader";
 import { ListItemButton } from "@mui/material";
 
@@ -116,7 +117,6 @@ export default function Home() {
       // Append the repository key to request body
       body: JSON.stringify({ repository: repository.key }),
     };
-    console.log(repositories);
 
     /*
     Fetching the GitHub details from flask microservice
@@ -213,6 +213,16 @@ export default function Home() {
               title={`Monthly Created & Closed Issues for ${repository.value} in last 1 year`}
               createdData={githubRepoData?.created}
               closedData={githubRepoData?.closed}
+            />
+            {/* Render barchart component for a monthly stars for a selected repositories*/}
+            <BarCharts
+              title={`Monthly Stars for ${repository.value} in last 1 year`}
+              data={githubRepoData?.starCount}
+            />
+            {/* Render barchart component for a monthly forks for a selected repositories*/}
+            <BarCharts
+              title={`Monthly Forks for ${repository.value} in last 1 year`}
+              data={githubRepoData?.forkCount}
             />
             <Divider
               sx={{ borderBlockWidth: "3px", borderBlockColor: "#FFA500" }}
