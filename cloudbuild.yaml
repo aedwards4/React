@@ -1,4 +1,6 @@
 steps:
+  - name: "gcr.io/cloud-builders/npm:node-12.18.3"
+    args: ["install"]
   # Build the container image
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", "gcr.io/react-347722/react", "."]
