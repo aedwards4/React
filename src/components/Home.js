@@ -101,7 +101,45 @@ export default function Home() {
     setRepository(repo);
   };
 
-
+  var starCount = [
+    {
+      repoName: "Angular",
+      starCount: 0
+    },
+    {
+      repoName: "Angular-cli",
+      starCount: 0
+    },
+    {
+      repoName: "Angular Material",
+      starCount: 0
+    },
+    {
+      repoName: "D3",
+      starCount: 0
+    },
+    {
+      repoName: "Angular-Google-Maps",
+      starCount: 0
+    },
+    {
+      repoName: "Facebook-React",
+      starCount: 0
+    },
+    {
+      repoName: "Tensorflow",
+      starCount: 0
+    },
+    {
+      repoName: "Keras",
+      starCount: 0
+    },
+    {
+      repoName: "Pallets-Flask",
+      starCount: 0
+    },
+  ];
+  var forkCount;
   console.log(githubRepoData);
 
   /* 
@@ -137,6 +175,8 @@ export default function Home() {
           setLoading(false);
           // Set state on successfull response from the API
           setGithubData(result);
+          console.log('result:');
+          console.log(result);
         },
         // On failure from flask microservice
         (error) => {
