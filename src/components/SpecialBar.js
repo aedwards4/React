@@ -12,7 +12,7 @@ const SpecialBar = (props) => {
       text: props.title,
     },
     xAxis: {
-        categories: ['Total'],
+        categories: ['Stars', 'Forks'],
         title: {
             text: null
         }
@@ -20,19 +20,19 @@ const SpecialBar = (props) => {
     yAxis: {
       min: 0,
       title: {
-        text: props.dataType,
+        text: 'Total',
       },
     },
     legend: {
       enabled: false,
     },
     tooltip: {
-      pointFormat: "Issues: <b>{point.y} </b>",
+      pointFormat: "Count: <b>{point.y} </b>",
     },
     series: [
       {
         name: props.title,
-        data: [props.data],
+        data: [props.starData, props.forkData],
         // dataLabels: {
         //   enabled: true,
         //   rotation: -90,
