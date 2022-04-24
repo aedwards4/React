@@ -369,6 +369,52 @@ export default function Home() {
                 />
               </div>
             </div>
+            {/* Rendering Timeseries Forecasting of Pulls using Tensorflow and
+                Keras LSTM */}
+            <div>
+              <Typography variant="h5" component="div" gutterBottom>
+                Timeseries Forecasting of Repo Pulls using Tensorflow and
+                Keras LSTM based on past month
+              </Typography>
+
+              <div>
+                <Typography component="h4">
+                  Model Loss for Repo Pulls
+                </Typography>
+                {/* Render the model loss image for Repo Pulls */}
+                <img
+                  src={githubRepoData?.pullsImageUrls?.model_loss_image_url}
+                  alt={"Model Loss for Repo Pulls"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  LSTM Generated Data for Repo Pulls
+                </Typography>
+                {/* Render the LSTM generated image for Repo Pulls*/}
+                <img
+                  src={
+                    githubRepoData?.pullsImageUrls?.lstm_generated_image_url
+                  }
+                  alt={"LSTM Generated Data for Repo Pulls"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  All Issues Data for Created Issues
+                </Typography>
+                {/* Render the all issues data image for created issues*/}
+                <img
+                  src={
+                    githubRepoData?.pullsImageUrls?.all_issues_data_image
+                  }
+                  alt={"All Pull Data for Repo Pulls"}
+                  loading={"lazy"}
+                />
+              </div>
+            </div>
           </div>
         )}
       </Box>
