@@ -372,6 +372,9 @@ export default function Home() {
             {/* Rendering Timeseries Forecasting of Pulls using Tensorflow and
                 Keras LSTM */}
             <div>
+              <Divider
+                sx={{ borderBlockWidth: "3px", borderBlockColor: "#FFA500" }}
+              />
               <Typography variant="h5" component="div" gutterBottom>
                 Timeseries Forecasting of Repo Pulls using Tensorflow and
                 Keras LSTM based on past month
@@ -403,14 +406,210 @@ export default function Home() {
               </div>
               <div>
                 <Typography component="h4">
-                  All Issues Data for Created Issues
+                  All Issues Data for Repo Pulls
                 </Typography>
-                {/* Render the all issues data image for created issues*/}
+                {/* Render the all issues data image for Repo Pulls*/}
                 <img
                   src={
                     githubRepoData?.pullsImageUrls?.all_issues_data_image
                   }
                   alt={"All Pull Data for Repo Pulls"}
+                  loading={"lazy"}
+                />
+              </div>
+            </div>
+            {/* Rendering Timeseries Forecasting of Commits using Tensorflow and
+                Keras LSTM */}
+            <div>
+              <Divider
+                sx={{ borderBlockWidth: "3px", borderBlockColor: "#FFA500" }}
+              />
+              <Typography variant="h5" component="div" gutterBottom>
+                Timeseries Forecasting of Repo Commits using Tensorflow and
+                Keras LSTM based on past month
+              </Typography>
+
+              <div>
+                <Typography component="h4">
+                  Model Loss for Repo Commits
+                </Typography>
+                {/* Render the model loss image for Repo Commits */}
+                <img
+                  src={githubRepoData?.commitsImageUrls?.model_loss_image_url}
+                  alt={"Model Loss for Repo Commits"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  LSTM Generated Data for Repo Commits
+                </Typography>
+                {/* Render the LSTM generated image for Repo Commits*/}
+                <img
+                  src={
+                    githubRepoData?.commitsImageUrls?.lstm_generated_image_url
+                  }
+                  alt={"LSTM Generated Data for Repo Commits"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  All Issues Data for Repo Commits
+                </Typography>
+                {/* Render the all issues data image for Repo Commits*/}
+                <img
+                  src={
+                    githubRepoData?.commitsImageUrls?.all_issues_data_image
+                  }
+                  alt={"All Pull Data for Repo Commits"}
+                  loading={"lazy"}
+                />
+              </div>
+            </div>
+            {/* Rendering Timeseries Forecasting of Branches using Tensorflow and
+                Keras LSTM */}
+            <div>
+             <Divider
+                sx={{ borderBlockWidth: "3px", borderBlockColor: "#FFA500" }}
+              />
+              <Typography variant="h5" component="div" gutterBottom>
+                Timeseries Forecasting of Repo Branches using Tensorflow and
+                Keras LSTM based on past month
+              </Typography>
+
+              <div>
+                <Typography component="h4">
+                  Model Loss for Repo Branches
+                </Typography>
+                {/* Render the model loss image for Repo Branches */}
+                <img
+                  src={githubRepoData?.branchesImageUrls?.model_loss_image_url}
+                  alt={"Model Loss for Repo Branches"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  LSTM Generated Data for Repo Branches
+                </Typography>
+                {/* Render the LSTM generated image for Repo Branches*/}
+                <img
+                  src={
+                    githubRepoData?.branchesImageUrls?.lstm_generated_image_url
+                  }
+                  alt={"LSTM Generated Data for Repo Branches"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  All Issues Data for Repo Branches
+                </Typography>
+                {/* Render the all issues data image for Repo Branches*/}
+                <img
+                  src={
+                    githubRepoData?.branchesImageUrls?.all_issues_data_image
+                  }
+                  alt={"All Pull Data for Repo Branches"}
+                  loading={"lazy"}
+                />
+              </div>
+            </div>
+            {/* Rendering Timeseries Forecasting of Repo Collaborators using Tensorflow and
+                Keras LSTM */}
+            <div>
+              <Divider
+                sx={{ borderBlockWidth: "3px", borderBlockColor: "#FFA500" }}
+              />
+              <Typography variant="h5" component="div" gutterBottom>
+                Timeseries Forecasting of Repo Collaborators using Tensorflow and
+                Keras LSTM based on past month
+              </Typography>
+
+              <div>
+                <Typography component="h4">
+                  Model Loss for Repo Collaborators
+                </Typography>
+                {/* Render the model loss image for Repo Collaborators */}
+                <img
+                  src={githubRepoData?.collaboratorsImageUrls?.model_loss_image_url}
+                  alt={"Model Loss for Repo Collaborators"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  LSTM Generated Data for Repo Collaborators
+                </Typography>
+                {/* Render the LSTM generated image for Repo Collaborators*/}
+                <img
+                  src={
+                    githubRepoData?.collaboratorsImageUrls?.lstm_generated_image_url
+                  }
+                  alt={"LSTM Generated Data for Repo Collaborators"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  All Issues Data for Repo Collaborators
+                </Typography>
+                {/* Render the all issues data image for Repo Collaborators*/}
+                <img
+                  src={
+                    githubRepoData?.collaboratorsImageUrls?.all_issues_data_image
+                  }
+                  alt={"All Pull Data for Repo Collaborators"}
+                  loading={"lazy"}
+                />
+              </div>
+            </div>
+            {/* Rendering Timeseries Forecasting of Repo Releases using Tensorflow and
+                Keras LSTM */}
+            <div>
+              <Divider
+                sx={{ borderBlockWidth: "3px", borderBlockColor: "#FFA500" }}
+              />
+              <Typography variant="h5" component="div" gutterBottom>
+                Timeseries Forecasting of Repo Releases using Tensorflow and
+                Keras LSTM based on past month
+              </Typography>
+
+              <div>
+                <Typography component="h4">
+                  Model Loss for Repo Releases
+                </Typography>
+                {/* Render the model loss image for Repo Releases */}
+                <img
+                  src={githubRepoData?.releasesImageUrls?.model_loss_image_url}
+                  alt={"Model Loss for Repo Releases"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  LSTM Generated Data for Repo Releases
+                </Typography>
+                {/* Render the LSTM generated image for Repo Releases*/}
+                <img
+                  src={
+                    githubRepoData?.releasesImageUrls?.lstm_generated_image_url
+                  }
+                  alt={"LSTM Generated Data for Repo Releases"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  All Issues Data for Repo Releases
+                </Typography>
+                {/* Render the all issues data image for Repo Releases*/}
+                <img
+                  src={
+                    githubRepoData?.releasesImageUrls?.all_issues_data_image
+                  }
+                  alt={"All Pull Data for Repo Releases"}
                   loading={"lazy"}
                 />
               </div>
