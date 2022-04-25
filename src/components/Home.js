@@ -290,7 +290,7 @@ export default function Home() {
                 </Typography>
                 {/* Render the model loss image for created issues */}
                 <img
-                  src={githubRepoData?.createdAtImageUrls?.model_loss_image_url}
+                  src={githubRepoData?.createdAtImageUrls?.LSTM?.model_loss_image_url}
                   alt={"Model Loss for Created Issues"}
                   loading={"lazy"}
                 />
@@ -302,7 +302,7 @@ export default function Home() {
                 {/* Render the LSTM generated image for created issues*/}
                 <img
                   src={
-                    githubRepoData?.createdAtImageUrls?.lstm_generated_image_url
+                    githubRepoData?.createdAtImageUrls?.LSTM?.lstm_generated_image_url
                   }
                   alt={"LSTM Generated Data for Created Issues"}
                   loading={"lazy"}
@@ -315,7 +315,7 @@ export default function Home() {
                 {/* Render the all issues data image for created issues*/}
                 <img
                   src={
-                    githubRepoData?.createdAtImageUrls?.all_issues_data_image
+                    githubRepoData?.createdAtImageUrls?.LSTM?.all_issues_data_image
                   }
                   alt={"All Issues Data for Created Issues"}
                   loading={"lazy"}
@@ -339,7 +339,7 @@ export default function Home() {
                 </Typography>
                 {/* Render the model loss image for closed issues  */}
                 <img
-                  src={githubRepoData?.closedAtImageUrls?.model_loss_image_url}
+                  src={githubRepoData?.closedAtImageUrls?.LSTM?.model_loss_image_url}
                   alt={"Model Loss for Closed Issues"}
                   loading={"lazy"}
                 />
@@ -351,7 +351,7 @@ export default function Home() {
                 {/* Render the LSTM generated image for closed issues */}
                 <img
                   src={
-                    githubRepoData?.closedAtImageUrls?.lstm_generated_image_url
+                    githubRepoData?.closedAtImageUrls?.LSTM?.lstm_generated_image_url
                   }
                   alt={"LSTM Generated Data for Closed Issues"}
                   loading={"lazy"}
@@ -363,7 +363,7 @@ export default function Home() {
                 </Typography>
                 {/* Render the all issues data image for closed issues*/}
                 <img
-                  src={githubRepoData?.closedAtImageUrls?.all_issues_data_image}
+                  src={githubRepoData?.closedAtImageUrls?.LSTM?.all_issues_data_image}
                   alt={"All Issues Data for Closed Issues"}
                   loading={"lazy"}
                 />
@@ -386,7 +386,7 @@ export default function Home() {
                 </Typography>
                 {/* Render the model loss image for Repo Pulls */}
                 <img
-                  src={githubRepoData?.pullsImageUrls?.model_loss_image_url}
+                  src={githubRepoData?.pullsImageUrls?.LSTM?.model_loss_image_url}
                   alt={"Model Loss for Repo Pulls"}
                   loading={"lazy"}
                 />
@@ -398,7 +398,7 @@ export default function Home() {
                 {/* Render the LSTM generated image for Repo Pulls*/}
                 <img
                   src={
-                    githubRepoData?.pullsImageUrls?.lstm_generated_image_url
+                    githubRepoData?.pullsImageUrls?.LSTM?.lstm_generated_image_url
                   }
                   alt={"LSTM Generated Data for Repo Pulls"}
                   loading={"lazy"}
@@ -411,7 +411,7 @@ export default function Home() {
                 {/* Render the all issues data image for Repo Pulls*/}
                 <img
                   src={
-                    githubRepoData?.pullsImageUrls?.all_issues_data_image
+                    githubRepoData?.pullsImageUrls?.LSTM?.all_issues_data_image
                   }
                   alt={"All Pull Data for Repo Pulls"}
                   loading={"lazy"}
@@ -435,7 +435,7 @@ export default function Home() {
                 </Typography>
                 {/* Render the model loss image for Repo Commits */}
                 <img
-                  src={githubRepoData?.commitsImageUrls?.model_loss_image_url}
+                  src={githubRepoData?.commitsImageUrls?.LSTM?.model_loss_image_url}
                   alt={"Model Loss for Repo Commits"}
                   loading={"lazy"}
                 />
@@ -447,7 +447,7 @@ export default function Home() {
                 {/* Render the LSTM generated image for Repo Commits*/}
                 <img
                   src={
-                    githubRepoData?.commitsImageUrls?.lstm_generated_image_url
+                    githubRepoData?.commitsImageUrls?.LSTM?.lstm_generated_image_url
                   }
                   alt={"LSTM Generated Data for Repo Commits"}
                   loading={"lazy"}
@@ -460,7 +460,7 @@ export default function Home() {
                 {/* Render the all issues data image for Repo Commits*/}
                 <img
                   src={
-                    githubRepoData?.commitsImageUrls?.all_issues_data_image
+                    githubRepoData?.commitsImageUrls?.LSTM?.all_issues_data_image
                   }
                   alt={"All Pull Data for Repo Commits"}
                   loading={"lazy"}
@@ -484,7 +484,7 @@ export default function Home() {
                 </Typography>
                 {/* Render the model loss image for Repo Branches */}
                 <img
-                  src={githubRepoData?.branchesImageUrls?.model_loss_image_url}
+                  src={githubRepoData?.branchesImageUrls?.LSTM?.model_loss_image_url}
                   alt={"Model Loss for Repo Branches"}
                   loading={"lazy"}
                 />
@@ -496,7 +496,7 @@ export default function Home() {
                 {/* Render the LSTM generated image for Repo Branches*/}
                 <img
                   src={
-                    githubRepoData?.branchesImageUrls?.lstm_generated_image_url
+                    githubRepoData?.branchesImageUrls?.LSTM?.lstm_generated_image_url
                   }
                   alt={"LSTM Generated Data for Repo Branches"}
                   loading={"lazy"}
@@ -509,7 +509,7 @@ export default function Home() {
                 {/* Render the all issues data image for Repo Branches*/}
                 <img
                   src={
-                    githubRepoData?.branchesImageUrls?.all_issues_data_image
+                    githubRepoData?.branchesImageUrls?.LSTM?.all_issues_data_image
                   }
                   alt={"All Pull Data for Repo Branches"}
                   loading={"lazy"}
@@ -533,7 +533,7 @@ export default function Home() {
                 </Typography>
                 {/* Render the model loss image for Repo Collaborators */}
                 <img
-                  src={githubRepoData?.collaboratorsImageUrls?.model_loss_image_url}
+                  src={githubRepoData?.collaboratorsImageUrls?.LSTM?.model_loss_image_url}
                   alt={"Model Loss for Repo Collaborators"}
                   loading={"lazy"}
                 />
@@ -545,7 +545,7 @@ export default function Home() {
                 {/* Render the LSTM generated image for Repo Collaborators*/}
                 <img
                   src={
-                    githubRepoData?.collaboratorsImageUrls?.lstm_generated_image_url
+                    githubRepoData?.collaboratorsImageUrls?.LSTM?.lstm_generated_image_url
                   }
                   alt={"LSTM Generated Data for Repo Collaborators"}
                   loading={"lazy"}
@@ -558,7 +558,7 @@ export default function Home() {
                 {/* Render the all issues data image for Repo Collaborators*/}
                 <img
                   src={
-                    githubRepoData?.collaboratorsImageUrls?.all_issues_data_image
+                    githubRepoData?.collaboratorsImageUrls?.LSTM?.all_issues_data_image
                   }
                   alt={"All Pull Data for Repo Collaborators"}
                   loading={"lazy"}
@@ -582,7 +582,7 @@ export default function Home() {
                 </Typography>
                 {/* Render the model loss image for Repo Releases */}
                 <img
-                  src={githubRepoData?.releasesImageUrls?.model_loss_image_url}
+                  src={githubRepoData?.releasesImageUrls?.LSTM?.model_loss_image_url}
                   alt={"Model Loss for Repo Releases"}
                   loading={"lazy"}
                 />
@@ -594,7 +594,7 @@ export default function Home() {
                 {/* Render the LSTM generated image for Repo Releases*/}
                 <img
                   src={
-                    githubRepoData?.releasesImageUrls?.lstm_generated_image_url
+                    githubRepoData?.releasesImageUrls?.LSTM?.lstm_generated_image_url
                   }
                   alt={"LSTM Generated Data for Repo Releases"}
                   loading={"lazy"}
@@ -607,7 +607,7 @@ export default function Home() {
                 {/* Render the all issues data image for Repo Releases*/}
                 <img
                   src={
-                    githubRepoData?.releasesImageUrls?.all_issues_data_image
+                    githubRepoData?.releasesImageUrls?.LSTM?.all_issues_data_image
                   }
                   alt={"All Pull Data for Repo Releases"}
                   loading={"lazy"}
