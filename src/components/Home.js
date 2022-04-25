@@ -334,6 +334,19 @@ export default function Home() {
                   loading={"lazy"}
                 />
               </div>
+              <div>
+                <Typography component="h4">
+                  StatsModels Generated Data for Created Issues
+                </Typography>
+                {/* Render the StatsModels generated image for created issues*/}
+                <img
+                  src={
+                    githubRepoData?.createdAtImageUrls?.SM?.sm_generated_image_url
+                  }
+                  alt={"StatsModels Generated Data for Created Issues"}
+                  loading={"lazy"}
+                />
+              </div>
             </div>
             {/* Rendering Timeseries Forecasting of Closed Issues using Tensorflow and
                 Keras LSTM  */}
@@ -391,6 +404,19 @@ export default function Home() {
                     githubRepoData?.closedAtImageUrls?.FB?.fbprophet_generated_image_url
                   }
                   alt={"FB-Prophet Generated Data for Closed Issues"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  StatsModels Generated Data for Closed Issues
+                </Typography>
+                {/* Render the StatsModels generated image for Closed issues*/}
+                <img
+                  src={
+                    githubRepoData?.closedAtImageUrls?.SM?.sm_generated_image_url
+                  }
+                  alt={"StatsModels Generated Data for Closed Issues"}
                   loading={"lazy"}
                 />
               </div>
@@ -456,6 +482,19 @@ export default function Home() {
                   loading={"lazy"}
                 />
               </div>
+              <div>
+                <Typography component="h4">
+                  StatsModels Generated Data for Repo Pulls
+                </Typography>
+                {/* Render the StatsModels generated image for Repo Pulls*/}
+                <img
+                  src={
+                    githubRepoData?.pullsImageUrls?.SM?.sm_generated_image_url
+                  }
+                  alt={"StatsModels Generated Data for Repo Pulls"}
+                  loading={"lazy"}
+                />
+              </div>
             </div>
             {/* Rendering Timeseries Forecasting of Commits using Tensorflow and
                 Keras LSTM */}
@@ -515,6 +554,19 @@ export default function Home() {
                     githubRepoData?.commitsImageUrls?.FB?.fbprophet_generated_image_url
                   }
                   alt={"FB-Prophet Generated Data for Repo Commits"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  StatsModels Generated Data for Repo Commits
+                </Typography>
+                {/* Render the StatsModels generated image for Repo Commits*/}
+                <img
+                  src={
+                    githubRepoData?.commitsImageUrls?.SM?.sm_generated_image_url
+                  }
+                  alt={"StatsModels Generated Data for Repo Commits"}
                   loading={"lazy"}
                 />
               </div>
@@ -580,6 +632,19 @@ export default function Home() {
                   loading={"lazy"}
                 />
               </div>
+              <div>
+                <Typography component="h4">
+                  StatsModels Generated Data for Repo Branches
+                </Typography>
+                {/* Render the StatsModels generated image for Repo Branches*/}
+                <img
+                  src={
+                    githubRepoData?.branchesImageUrls?.SM?.sm_generated_image_url
+                  }
+                  alt={"StatsModels Generated Data for Repo Branches"}
+                  loading={"lazy"}
+                />
+              </div>
             </div>
             {/* Rendering Timeseries Forecasting of Repo Collaborators using Tensorflow and
                 Keras LSTM */}
@@ -642,6 +707,19 @@ export default function Home() {
                   loading={"lazy"}
                 />
               </div>
+              <div>
+                <Typography component="h4">
+                  StatsModels Generated Data for Repo Collaborators
+                </Typography>
+                {/* Render the StatsModels generated image for Repo Collaborators*/}
+                <img
+                  src={
+                    githubRepoData?.collaboratorsImageUrls?.SM?.sm_generated_image_url
+                  }
+                  alt={"StatsModels Generated Data for Repo Collaborators"}
+                  loading={"lazy"}
+                />
+              </div>
             </div>
             {/* Rendering Timeseries Forecasting of Repo Releases using Tensorflow and
                 Keras LSTM */}
@@ -701,6 +779,19 @@ export default function Home() {
                     githubRepoData?.releasesImageUrls?.FB?.fbprophet_generated_image_url
                   }
                   alt={"FB-Prophet Generated Data for Repo Releases"}
+                  loading={"lazy"}
+                />
+              </div>
+              <div>
+                <Typography component="h4">
+                  StatsModels Generated Data for Repo Releases
+                </Typography>
+                {/* Render the StatsModels generated image for Repo Releases*/}
+                <img
+                  src={
+                    githubRepoData?.releasesImageUrls?.SM?.sm_generated_image_url
+                  }
+                  alt={"StatsModels Generated Data for Repo Releases"}
                   loading={"lazy"}
                 />
               </div>
