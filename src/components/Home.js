@@ -273,6 +273,15 @@ export default function Home() {
               starData={githubRepoData?.starCount}
               forkData={githubRepoData?.forkCount}
             />
+            <Typography variant="h5" component="div" gutterBottom>
+              Day Max Issues Created: {githubRepoData?.dailyCreatedMax}
+            </Typography>
+            <Typography variant="h5" component="div" gutterBottom>
+              Day Max Issues Closed: {githubRepoData?.dailyClosedMax}
+            </Typography>
+            <Typography variant="h5" component="div" gutterBottom>
+              Month Max Issues Closed: {githubRepoData?.monthlyClosedMax}
+            </Typography>
             <Divider
               sx={{ borderBlockWidth: "3px", borderBlockColor: "#FFA500" }}
             />
